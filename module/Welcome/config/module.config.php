@@ -2,23 +2,23 @@
 return array (
 	'controllers' => array (
 		'invokables' => array (
-			'MyModule\Controller\Index' => 
-					'MyModule\Controller\IndexController',
+			'Welcome\Controller\Index' => 
+					'Welcome\Controller\IndexController',
 						
 			) 
 	),
 	'router' => array (
 		'routes' => array (
-			'mymodule' => array (
+			'welcome' => array (
 				'type' => 'segment',
 				'options' => array (
-					'route' => '/mymodule[/:action]',
+					'route' => '/welcome[/:action]',
 					'constraints' => array (
 						'action'=>'[a-zA-Z][a-zA-Z0-9_-]*',
 						),
 					'defaults' => array (
 						'controller' => 
-								'MyModule\Controller\Index',
+								'Welcome\Controller\Index',
 						'action' => 'index' 
 					) 
 				) 
@@ -28,7 +28,7 @@ return array (
 		
 	'view_manager' => array (
 		'template_path_stack' => array (
-			'mymodule' => __DIR__ . '/../view' 
+			'welcome' => __DIR__ . '/../view' 
 		), 
 	),
 );

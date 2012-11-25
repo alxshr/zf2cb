@@ -1,6 +1,6 @@
 <?php
 
-namespace MyModule;
+namespace Welcome;
 
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
